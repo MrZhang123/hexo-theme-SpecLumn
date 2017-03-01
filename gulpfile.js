@@ -20,7 +20,7 @@ gulp.task('bs',()=>{
             baseDir:`./`
         },
         open:'false',
-        browser:'google chrome'
+        browser:'google chrome canary'
     });
     gulp.watch('scss/index.scss',['sass'])
     gulp.watch('*.html').on('change',reload);
