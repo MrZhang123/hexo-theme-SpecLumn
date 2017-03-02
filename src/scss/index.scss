@@ -1,19 +1,3 @@
-@mixin wh($width,$height){
-    width: $width;
-    height: $height;
-}
-@mixin button($radius,$bdcolor,$color){
-    display: inline-block;
-    padding: 0 16px;
-    font-size: 14px;
-    line-height: 34px;
-    color: #8590a6;
-    text-align: center;
-    cursor: pointer;
-    border-radius: $radius;
-    border:1px solid $bdcolor;
-    color: $color;
-}
 @font-face {
   font-family: 'iconfont';  /* project id 244073 */
   src: url('//at.alicdn.com/t/font_xn63lnlyz871ra4i.eot');
