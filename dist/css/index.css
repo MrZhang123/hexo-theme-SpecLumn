@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 244073 */
+  src: url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.eot");
+  src: url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.woff") format("woff"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.ttf") format("truetype"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.svg#iconfont") format("svg"); }
+
+.font {
+  font-family: 'iconfont';
+  color: #999; }
+
+.navbar {
+  width: 100%;
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc; }
+  .navbar .navbar_logo {
+    width: 58px;
+    height: 58px; }
+    .navbar .navbar_logo a {
+      display: block;
+      line-height: 59px;
+      text-align: center;
+      color: #999;
+      text-decoration: none;
+      font-size: 24px; }
+  .navbar .navbar_functionality {
+    width: 66px;
+    text-align: center;
+    -webkit-transition: color .6s;
+    transition: color .6s;
+    display: flex;
+    flex: 0 0 66px; }
+    .navbar .navbar_functionality .navbar_menu {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      background-color: transparent;
+      border: 0;
+      font-size: 24px;
+      cursor: pointer; }
+      .navbar .navbar_functionality .navbar_menu:focus {
+        outline: 5px auto #f1f2f3; }

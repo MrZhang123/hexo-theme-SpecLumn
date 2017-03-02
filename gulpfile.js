@@ -8,8 +8,8 @@ const reload = browserSync.reload;
 // const workFolder = 'hexo-theme-zhihu';
 const files = [
     `*.html`,
-    `scss/*.scss`,
-    `js/*.js`
+    `src/scss/*.scss`,
+    `src/js/*.js`
 ];
 
 /*browserSync*/
@@ -22,13 +22,13 @@ gulp.task('bs',()=>{
         open:'false',
         browser:'google chrome canary'
     });
-    gulp.watch('scss/index.scss',['sass'])
+    gulp.watch('src/scss/*.scss',['sass'])
     gulp.watch('*.html').on('change',reload);
 });
 
 /*gulp-sass*/
 gulp.task('sass',()=>{
-    gulp.src('scss/*.scss')
+    gulp.src('src/scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/css'))
         .pipe(reload({stream:true}));   //css注入
