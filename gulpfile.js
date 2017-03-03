@@ -18,9 +18,10 @@ gulp.task('bs',()=>{
         files,
         server:{
             baseDir:`./`
-        },
-        open:'false',
-        browser:'google chrome canary'
+        }
+        /*open browser*/
+        // open:'false',
+        // browser:'google chrome canary'
     });
     gulp.watch('src/scss/*.scss',['sass'])
     gulp.watch('*.html').on('change',reload);
