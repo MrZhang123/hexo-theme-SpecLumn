@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 244073 */
-  src: url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.eot");
-  src: url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.woff") format("woff"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.ttf") format("truetype"), url("//at.alicdn.com/t/font_xn63lnlyz871ra4i.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_ezdt74m9i8dunmi.eot");
+  src: url("//at.alicdn.com/t/font_ezdt74m9i8dunmi.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_ezdt74m9i8dunmi.woff") format("woff"), url("//at.alicdn.com/t/font_ezdt74m9i8dunmi.ttf") format("truetype"), url("//at.alicdn.com/t/font_ezdt74m9i8dunmi.svg#iconfont") format("svg"); }
 
 .font {
   font-family: 'iconfont';
   color: #999; }
+
+a {
+  text-decoration: none; }
 
 .navbar {
   width: 100%;
@@ -22,7 +25,6 @@
       line-height: 59px;
       text-align: center;
       color: #999;
-      text-decoration: none;
       font-size: 24px; }
   .navbar .navbar_functionality {
     width: 66px;
