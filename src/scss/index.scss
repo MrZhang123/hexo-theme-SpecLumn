@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 244073 */
-  src: url('//at.alicdn.com/t/font_ezdt74m9i8dunmi.eot');
-  src: url('//at.alicdn.com/t/font_ezdt74m9i8dunmi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_ezdt74m9i8dunmi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_ezdt74m9i8dunmi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_ezdt74m9i8dunmi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot');
+  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.svg#iconfont') format('svg');
 }
-.font{
+.icon_font{
     font-family: 'iconfont';
     color: #999;
 }
@@ -143,6 +143,51 @@ a{
                 top: 50%;
                 height: 1px;
                 background-color:#f0f0f0;
+            }
+        }
+        .infinite_list{
+            li{
+                margin-bottom: 58px;
+            }
+        }
+        .post_list_item{
+            display: flex;
+            color: #333;
+            .post_list_item_img{
+                @include wh(240px,180px);
+                border-radius: 4px;
+                vertical-align: top;
+                padding-right: 16px;
+                object-fit: cover;
+                flex: 0;
+            }
+            .post_list_item_info{
+                flex: 1;
+                .post_list_item_title{
+                    line-height: 1.5;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .post_list_item_summary{
+                    padding: 10px 0;
+                    line-height: 1.7;
+                    color: #666;
+                    word-break: break-all;
+                    .post_list_item_readall{
+                        padding-left: 4px;
+                        color: #b3b3b3;
+                        .icon_font{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .post_list_item_footer{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: gray;
+                }
             }
         }
     }
