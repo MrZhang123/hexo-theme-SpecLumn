@@ -11,11 +11,6 @@
 a {
   text-decoration: none; }
 
-a:not(.post_list_item) {
-  color: #3e7ac2; }
-  a:not(.post_list_item):hover {
-    text-decoration: underline; }
-
 .navbar {
   width: 100%;
   height: 59px;
@@ -55,7 +50,8 @@ a:not(.post_list_item) {
 .main_content {
   margin: 47px auto 0;
   padding: 0;
-  width: 660px; }
+  width: 660px;
+  height: 1000px; }
   .main_content .column_about {
     display: flex;
     flex-direction: column;
@@ -166,10 +162,3 @@ a:not(.post_list_item) {
         justify-content: space-between;
         font-size: 14px;
         color: gray; }
-
-footer {
-  padding: 20px 0;
-  border-top: 1px solid #eceff2;
-  color: #565a5f;
-  font-size: 16px;
-  text-align: center; }

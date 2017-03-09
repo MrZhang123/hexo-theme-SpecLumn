@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title><%= config.title %></title>
+    <%- css('css/index') %>
+</head>
+<body>
+    <%- partial('_partial/header') %>
+    <div class="main">
+        <%- body %>
+    </div>
+    <%- partial('_partial/footer') %>
+    <%- js('js/index.js') %>
+</body>
+</html>

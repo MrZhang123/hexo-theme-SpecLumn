@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
+        <header class="navbar">
             <div class="navbar_logo">
                 <a href="#" class="navbar_logo_icon">Z</a>
             </div>
             <div class="navbar_functionality">
                 <button class="navbar_menu icon_font"></button>
             </div>
-        </div>
+        </header>
         <div class="main_content">
             <div class="column_about">
                 <img src="./static/img/test.jpg" alt="head">
@@ -70,7 +70,7 @@
             </div>
             <div class="article">
                 <div class="block_title">
-                    <h2 class="block_title_font">最新文章</h2>
+                    <h2 class="block_title_font">文章</h2>
                     <span class="block_title_line"></span>
                 </div>
                 <ul class="infinite_list column_postList">
@@ -81,9 +81,7 @@
                                 <span class="post_list_item_title">Vue.js 的实用技巧（一）</span>
                                 <p class="post_list_item_summary">
                                     Vue.js 2.0 已经发布了有一段时间，生态链也日渐完善。作者在使用 Vue.js 开发项目时收集的一些工具和使用技巧，分享给各位。…
-                                    <span class="post_list_item_readall">
-                                        查看全文 <i class="icon_font">&#xe600;</i>
-                                    </span>
+                                    <span class="post_list_item_readall">查看全文 &gt;</span>
                                 </p>
                                 <div class="post_list_item_footer">
                                     <span class="post_list_item_date">2017-03-08</span>
@@ -147,8 +145,14 @@
                         </a>
                     </li>
                 </ul>
+                <div class="pagination">
+                    
+                </div>
             </div>
         </div>
+        <footer>
+            <div class="info"><span>Powered By <a href="https://hexo.io/" target="blank">Hexo</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Theme by <a href="https://github.com/mrzhang123/hexo-theme-SpecLumn" target="blank">SpecLumn</a></span></div>
+        </footer>
     </div>
     <script src="./src/js/index.js"></script>
 </body>

@@ -15,6 +15,12 @@
 a{
     text-decoration: none;
 }
+a:not(.post_list_item){
+    color: #3e7ac2;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 //top-navbar
 .navbar{
     width: 100%;
@@ -64,7 +70,6 @@ a{
     margin: 47px auto 0;
     padding: 0;
     width: 660px;
-    height: 1000px;
     .column_about{
         display: flex;
         flex-direction: column;
@@ -190,4 +195,11 @@ a{
             }
         }
     }
+}
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #eceff2;
+    color: #565a5f;
+    font-size: 16px;
+    text-align: center;
 }
