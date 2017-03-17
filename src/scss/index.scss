@@ -207,20 +207,14 @@ footer {
 /*--------------------文章部分--------------------*/
 
 .article{
-    height: 1000px;
-    .line{
+    img{
         display: block;
-        text-align: center;
-        margin: 50px 0;
+        width: 100%;
     }
     .post_header{
         margin-top: 22px;
         .post_title_img{
             margin-bottom: 22px;
-            img{
-                display: block;
-                width: 100%;
-            }
         }
         .post_title{
             font-size: 32px;
@@ -229,9 +223,9 @@ footer {
         }
         .post_tag{
             margin-top: 22px;
-            small{
+            .archive-article-date{
                 color: gray;
-                font-size: 14px;
+                font-size: 
             }
         }
     }
