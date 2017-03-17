@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'iconfont';
   /* project id 244073 */
@@ -173,3 +174,27 @@ footer {
   color: #565a5f;
   font-size: 16px;
   text-align: center; }
+
+/*--------------------文章部分--------------------*/
+.article {
+  height: 1000px; }
+  .article .line {
+    display: block;
+    text-align: center;
+    margin: 50px 0; }
+  .article .post_header {
+    margin-top: 22px; }
+    .article .post_header .post_title_img {
+      margin-bottom: 22px; }
+      .article .post_header .post_title_img img {
+        display: block;
+        width: 100%; }
+    .article .post_header .post_title {
+      font-size: 32px;
+      line-height: 1.3;
+      font-weight: 700; }
+    .article .post_header .post_tag {
+      margin-top: 22px; }
+      .article .post_header .post_tag small {
+        color: gray;
+        font-size: 14px; }
