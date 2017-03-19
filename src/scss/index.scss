@@ -140,12 +140,41 @@ a{
                 text-decoration: none;
             }
         }
-        .post_item_pic{
-            img{
-                
-                border-radius: 4px;
-                vertical-align: top;
-                object-fit: cover;
+        img{
+            border-radius: 4px;
+            vertical-align: top;
+            object-fit: cover;
+        }
+        .post_item_title{
+            line-height: 1.5;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .post_item_summary{
+            padding: 10px 0;
+            line-height: 1.7;
+            word-break: break-all;
+            .post_list_item_readall{
+                padding-left: 4px;
+                color: #b3b3b3;
+                .icon_font{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .post_item_footer{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: gray;
+            .right_tags{
+                span{
+                    padding: 0 15px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(0,0,0,0.1);
+                    background-color: rgba(0,0,0,0.06);
+                }
             }
         }
         /*article line*/
@@ -172,8 +201,17 @@ a{
         }
         /*.column_list*/
         .post_item_column{
-            img{
-                height: 220px;
+            .post_item_pic{
+                padding-bottom: 10px;
+                img{
+                    height: 220px;
+                }
+            }
+            .post_item_info{
+                .post_item_title{
+                    display: inherit;
+                    line-height: 1.5;
+                }
             }
         }
         /*row list*/
@@ -194,37 +232,9 @@ a{
             }
             .post_list_item_info{
                 flex: 1;
-                .post_list_item_title{
-                    line-height: 1.5;
-                    font-size: 20px;
-                    font-weight: 700;
-                }
-                .post_list_item_summary{
-                    padding: 10px 0;
-                    line-height: 1.7;
-                    word-break: break-all;
-                    .post_list_item_readall{
-                        padding-left: 4px;
-                        color: #b3b3b3;
-                        .icon_font{
-                            display: inline-block;
-                            vertical-align: middle;
-                        }
-                    }
-                }
-                .post_list_item_footer{
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 14px;
-                    color: gray;
-                    .left_tag{
-                        span{
-                            &:nth-of-type(2){
-                                margin: 0 10px; 
-                            }
-                        }
-                    }
-                }
+                
+                
+                
             }
         }
     }
