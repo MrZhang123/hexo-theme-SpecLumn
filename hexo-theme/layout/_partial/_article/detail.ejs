@@ -1,0 +1,32 @@
+<div class="article">
+    <div class="main_content post">
+        <div class="post_header">
+            <div class="post_title_img">
+                <% if(post.photos) { %>
+                    <img src="<% post.photos[0] %>" alt="title">
+                <% } %>
+            </div>
+            <h1 class="post_title"><% post.title %></h1>
+            <div class="post_tag">
+                <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
+            </div>
+        </div>
+        <div class="post_content">
+            <% if(post.photos){ %>
+                <% for(var i = 1, len = post.photos.length; i < len; i++){ %>
+                    <img class="gallery" src="<%=post.photos[i] %>" alt="pic">
+                <% } %>
+            <% } %>
+            <%- post.content %>
+        </div>
+        <% if(post.comments){ %>
+        <div id="comments">
+            <% if (config.duoshuo_shortname){ %>
+                    <%- partial('_partial/_plugins/duoshuo') %>
+                <% }else if(config.disqus_shortname){ %>
+                    <%- partial('_partial/_plugins/disqus') %>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+</div>

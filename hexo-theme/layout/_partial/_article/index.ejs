@@ -1,18 +1,21 @@
-<ul class="infinite_list column_postList">
-    <li>
-        <a href="#" class="post_list_item post_list_item--responsive">
-            <img src="./static/img/vuejs.png" alt="pic" class="post_list_item_img">
-            <div class="post_list_item_info">
-                <span class="post_list_item_title">Vue.js 的实用技巧（一）</span>
-                <p class="post_list_item_summary">
-                    Vue.js 2.0 已经发布了有一段时间，生态链也日渐完善。作者在使用 Vue.js 开发项目时收集的一些工具和使用技巧，分享给各位。…
-                    <span class="post_list_item_readall">查看全文 &gt;</span>
-                </p>
-                <div class="post_list_item_footer">
-                    <span class="post_list_item_date">2017-03-08</span>
-                    <span class="data_list_item_comments">8 条评论</span>
+<li>
+<% if(!post.link) { %>    
+    <a href="<%- url_for(post.url) %>" class="post_list_item post_list_item--responsive">
+        <img src="<%=post.photo[0]%>" alt="pic" class="post_list_item_img">
+        <div class="post_list_item_info">
+            <span class="post_list_item_title"><%=post.title%></span>
+            <p class="post_list_item_summary">
+                Vue.js 2.0 已经发布了有一段时间，生态链也日渐完善。作者在使用 Vue.js 开发项目时收集的一些工具和使用技巧，分享给各位。…
+                <span class="post_list_item_readall">查看全文 &gt;</span>
+            </p>
+            <div class="post_list_item_footer">
+                <div class="left_tag">
+                    <span class="post_list_item_date"><%= post.date.format('YYYY-MM-DD') %></span>
+                    <span class="post_list_item_date">javascript</span>
+                    <span class="post_list_item_date">vue</span>
                 </div>
+                <span class="data_list_item_comments">8 条评论</span>
             </div>
-        </a>
-    </li>
-</ul>
+        </div>
+    </a>
+</li>

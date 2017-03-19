@@ -191,6 +191,13 @@ a:not(.post_list_item){
                     justify-content: space-between;
                     font-size: 14px;
                     color: gray;
+                    .left_tag{
+                        span{
+                            &:nth-of-type(2){
+                                margin: 0 10px; 
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -223,10 +230,10 @@ footer {
         }
         .post_tag{
             margin-top: 22px;
-            .archive-article-date{
-                color: gray;
-                font-size: 
-            }
+            // .archive-article-date{
+            //     color: gray;
+            //     font-size: 
+            // }
         }
     }
 }
