@@ -12,15 +12,18 @@
     font-family: 'iconfont';
     color: #999;
 }
-a{
-    text-decoration: none;
+img{
+    display: block;
+    width: 100%;
 }
-a:not(.post_list_item){
+a{
     color: #3e7ac2;
+    text-decoration: none;
     &:hover{
         text-decoration: underline;
     }
 }
+
 //top-navbar
 .navbar{
     width: 100%;
@@ -127,7 +130,25 @@ a:not(.post_list_item){
             }
         }
     }
-    .article{
+    .article_list{
+        /*common*/
+        a{
+            display: block;
+            color: #666;
+            &:hover{
+                color: #666;
+                text-decoration: none;
+            }
+        }
+        .post_item_pic{
+            img{
+                
+                border-radius: 4px;
+                vertical-align: top;
+                object-fit: cover;
+            }
+        }
+        /*article line*/
         .block_title{
             position: relative;
             margin-bottom: 32px;
@@ -149,6 +170,13 @@ a:not(.post_list_item){
                 background-color:#f0f0f0;
             }
         }
+        /*.column_list*/
+        .post_item_column{
+            img{
+                height: 220px;
+            }
+        }
+        /*row list*/
         .infinite_list{
             li{
                 margin-bottom: 58px;
@@ -156,13 +184,12 @@ a:not(.post_list_item){
         }
         .post_list_item{
             display: flex;
-            color: #333;
+            // color: #333;
             .post_list_item_img{
                 @include wh(240px,180px);
-                border-radius: 4px;
-                vertical-align: top;
+                
                 padding-right: 16px;
-                object-fit: cover;
+                
                 flex: 0;
             }
             .post_list_item_info{
@@ -175,7 +202,6 @@ a:not(.post_list_item){
                 .post_list_item_summary{
                     padding: 10px 0;
                     line-height: 1.7;
-                    color: #666;
                     word-break: break-all;
                     .post_list_item_readall{
                         padding-left: 4px;
@@ -214,10 +240,6 @@ footer {
 /*--------------------文章部分--------------------*/
 
 .article{
-    img{
-        display: block;
-        width: 100%;
-    }
     .post_header{
         margin-top: 22px;
         .post_title_img{

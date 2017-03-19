@@ -11,10 +11,10 @@
             <div class="post_list_item_footer">
                 <div class="left_tag">
                     <span class="post_list_item_date"><%= post.date.format('YYYY-MM-DD') %></span>
-                    <span class="post_list_item_date">javascript</span>
-                    <span class="post_list_item_date">vue</span>
+                    <% for(var i=0;i<site.tags.length;i++) {%>
+                        <span class="post_list_item_date">site.tags[i]</span>
+                    <%}%>
                 </div>
-                <span class="data_list_item_comments">8 条评论</span>
             </div>
         </div>
     </a>
