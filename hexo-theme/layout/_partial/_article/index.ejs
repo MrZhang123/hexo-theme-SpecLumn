@@ -1,21 +1,20 @@
-<li>
-<% if(!post.link) { %>    
-    <a href="<%- url_for(post.url) %>" class="post_list_item post_list_item--responsive">
-        <img src="<%=post.photo[0]%>" alt="pic" class="post_list_item_img">
-        <div class="post_list_item_info">
-            <span class="post_list_item_title"><%=post.title%></span>
-            <p class="post_list_item_summary">
-                Vue.js 2.0 已经发布了有一段时间，生态链也日渐完善。作者在使用 Vue.js 开发项目时收集的一些工具和使用技巧，分享给各位。…
-                <span class="post_list_item_readall">查看全文 &gt;</span>
-            </p>
-            <div class="post_list_item_footer">
-                <div class="left_tag">
-                    <span class="post_list_item_date"><%= post.date.format('YYYY-MM-DD') %></span>
-                    <% for(var i=0;i<site.tags.length;i++) {%>
-                        <span class="post_list_item_date">site.tags[i]</span>
-                    <%}%>
-                </div>
-            </div>
-        </div>
+<div class="post_item post_item_column">
+<% if(!post.link) { %>
+    <a href="<%- url_for(post.path) %>" class="post_item_pic">
+        <img src="static/img/post_img.jpg" alt="title">
     </a>
-</li>
+<% } %>    
+    <div class="post_item_info">
+        <a href="#">
+            <div class="post_item_title">2017 年你应该学习的编程语言、框架和工具</div>
+            <div class="post_item_summary">在过去的一年里，软件开发行业继续大踏步地向前迈进。回顾 2016 年，我们看到了更多新兴的流行语言、框架和工具，它们改变着我们的工作方式，让我们看到更多的可能。但在这个行业，紧随潮流是很难的。所以在每年年底，我们都会给你提供一些建议，它涉及什么是最重要的，以及你在未来一年中应该学习什么。</div>
+        </a>
+    </div>
+    <div class="post_item_footer">
+        <span class="left_date">2017-03-08</span>
+        <span class="right_tags">
+            <span>javascript</span>
+            <span>vue</span>
+        </span>
+    </div>
+</div>

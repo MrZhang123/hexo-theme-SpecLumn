@@ -1,7 +1,5 @@
 <% if(index){ %>
-<ul class="infinite_list column_postList">
     <%- partial('_partial/_article/index', {post: post}) %>
-</ul>    
 <% } else if(post.type === 'tags'){ %>
     <%- list_tags() %>
 <% } else if(post.type === 'categories'){ %>

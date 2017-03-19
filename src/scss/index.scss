@@ -194,7 +194,6 @@ a{
                 span{
                     padding: 0 15px;
                     border-radius: 10px;
-                    border: 1px solid rgba(0,0,0,0.1);
                     background-color: rgba(0,0,0,0.06);
                 }
             }
@@ -204,7 +203,7 @@ a{
         .post_item_column{
             margin-bottom: 58px;
             .post_item_pic{
-                padding-bottom: 10px;
+                padding-bottom: 15px;
                 img{
                     height: 220px;
                 }
