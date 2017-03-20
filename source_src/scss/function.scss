@@ -14,3 +14,7 @@
     border:1px solid $bdcolor;
     color: $color;
 }
+@mixin transition($change,$time){
+    -webkit-transition: $change $time;
+    transition: $change $time;
+}

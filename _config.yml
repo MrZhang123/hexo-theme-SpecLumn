@@ -17,7 +17,7 @@ customize:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.jpg
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: ZY
+        author: Web Developer
         author_title: Web Developer & Designer
         follow: https://github.com/MrZhang123/
     highlight: monokai

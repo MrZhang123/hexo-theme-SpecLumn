@@ -2,40 +2,18 @@
 <div class="main_content">
     <div class="column_about">
         <img src="<%= url_for(profile.avatar) %>" alt="head">
-        <h1 class="column_about_name">zeeCool</h1>
+        <h1 class="column_about_name"><%= profile.author %></h1>
         <p class="column_about_intro"><%= profile.author_title %></p>
         <div class="column_about_actions">
             <a class="button column_follow_button" target="_blank" href="<%= profile.follow %>">关注我</a>
         </div>
-        <ul class="column_topic_list">
-            <li>
-                <a href="#">
-                    <span class="topic_tag">vuejs</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="topic_tag">react</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="topic_tag">css</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="topic_tag">angular</span>
-                </a>
-            </li>
-            <li>
-                <button class="showall">更多</button>
-            </li>
-        </ul>
+        <div class="column_topic_list">
+            <%- list_categories() %>
+        </div>
     </div>
     <div class="article_list">
         <% page.posts.each(function(post){ %>
-            <%- partial('_partial/article', {index: true, post: post}) %>
+            <%- partial('common/article', {index: true, post: post}) %>
         <% }) %>
     </div>
     <div class="pagination">
