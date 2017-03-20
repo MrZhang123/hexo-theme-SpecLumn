@@ -1,5 +1,7 @@
-<% if(post.photos && post.photos.length) { %>
-    <% post.pootos.forEach(function(photo , i)){ %>
+<% if (post.photos && post.photos.length) { %>
+<div class="article-gallery">
+    <% post.photos.forEach(function(photo, i) { %>
         <img src="<%- url_for(photo) %>" alt="pic">
     <% }) %>
+</div>
 <% } %>
