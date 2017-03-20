@@ -1,10 +1,13 @@
 <div class="post_item post_item_column">
     <div class="post_item_info">
-        <% if(!post.link) {%>
-            <a href="<%- url_for(post.path)">
+        <% if(post.link) {%>
+            <a href="<%- url_for(post.path)" target="_blank">
                 <span class="post_item_title"><%= post.title %></span>
+                <%- partial('post/gallery') %>
             </a>
         <% } %>
+
+
         <a href="#">
             <div class="post_item_title">2017 年你应该学习的编程语言、框架和工具</div>
             <img src="static/img/post_img.jpg" alt="title">
