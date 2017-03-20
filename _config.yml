@@ -15,12 +15,11 @@ customize:
         url: images/logo.png
     profile:
         enabled: true # Whether to show profile bar
-        avatar: css/images/avatar.png
+        avatar: css/images/avatar.jpg
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: PPOffice
+        author: ZY
         author_title: Web Developer & Designer
-        location: Harbin, China
-        follow: https://github.com/ppoffice/
+        follow: https://github.com/MrZhang123/
     highlight: monokai
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false

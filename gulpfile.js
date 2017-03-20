@@ -30,7 +30,7 @@ gulp.task('bs',()=>{
 /*gulp-sass*/
 gulp.task('sass',()=>{
     gulp.src('source_src/scss/index.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('source/css'))
         .pipe(reload({stream:true}));   //css注入
 });
