@@ -13,7 +13,7 @@
         <% } else if(post.title) { %>
             <% if (index) { %>
                 <div class="post_item_title">
-                    <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>    
+                    <a href="<%- url_for(post.path) %>"><%= post.title %></a>    
                 </div>
                 <%- partial("post/gallery") %>
                 <% if(post.excerpt) { %>
