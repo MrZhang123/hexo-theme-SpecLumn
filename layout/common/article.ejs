@@ -1,44 +1,42 @@
 <article class="post_item post_item_column">
     <div class="post_item_info">
         <% if(post.link){ %>
-            <div class="post_item_title">
-                <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>    
-            </div>
-            <%- partial("post/gallery") %>
             <% if(index && post.excerpt) { %>
+                <div class="post_item_title">
+                    <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>    
+                </div>
+                <%- partial("post/gallery") %>
                 <div class="post_item_summary"><%- post.excerpt %></div>
+                <% if(page.layout != 'page' ) { %>
+                    <div class="post_item_footer">
+                        <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+                        <a href="<%- url_for(post.path) %>" class="showall">查看全文</a>
+                    </div>
+                <% } %>
             <% } else { %>
                 <%- post.content %>
             <% } %>
+            
         <% } else if(post.title) { %>
-            <% if (index) { %>
+            
+            <% if(index && post.excerpt) { %>
                 <div class="post_item_title">
                     <a href="<%- url_for(post.path) %>"><%= post.title %></a>    
                 </div>
                 <%- partial("post/gallery") %>
-                <% if(post.excerpt) { %>
-                    <div class="post_item_summary"><%- post.excerpt %></div>
-                <% } else { %>
-                    <%- post.content %>
+                <div class="post_item_summary"><%- post.excerpt %></div>
+                <% if(page.layout != 'page' ) { %>
+                    <div class="post_item_footer">
+                        <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+                        <a href="<%- url_for(post.path) %>" class="showall">查看全文</a>
+                    </div>
                 <% } %>
             <% } else { %>
                 <div class="post_item_title"><%= post.title %></div>
                 <%- partial("post/gallery") %>
-                <% if(post.excerpt) { %>
-                    <div class="post_item_summary"><%- post.excerpt %></div>
-                <% } else { %>
-                    <%- post.content %>
-                <% } %>
+                <%- post.content %>
+                <%- partial('comment/index') %>
             <% } %>
         <% } %>
     </div>
-    <% if(page.layout != 'page' ) { %>
-        <div class="post_item_footer">
-            <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-            <a href="<%- url_for(post.path) %>" class="showall">查看全文</a>
-        </div>
-    <% } %>
 </article>
-<% if (!index) { %>
-    <%- partial('comment/index') %>
-<% } %>
