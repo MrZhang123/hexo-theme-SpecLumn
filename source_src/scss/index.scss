@@ -45,7 +45,6 @@ a{
     .navbar_functionality{
         width: 66px;
         text-align: center;
-        @include transition(color,0.6s)
         display: flex;
         flex: 0 0 66px;
         .navbar_menu{
@@ -98,10 +97,12 @@ a{
             .column_follow_button{
                 width: 90px;
                 box-sizing: border-box;
-                @include button(4px, #b3b3b3, gray);
-                @include transition(all,0.6s);
+                padding: 0 16px;
+                font-size: 14px;
+                line-height: 34px;
+                @include button(4px, #f5f8f9, gray);
                 &:hover{
-                    background-color: gray;
+                    background-color: #38b7ea;
                     text-decoration: none;
                     color: #fff;
                 }
@@ -122,10 +123,9 @@ a{
                 border: 1px solid rgba(0,0,0,.1);
                 color: gray;
                 cursor:pointer;
-                @include transition(all,0.6s);
                 &:hover{
                     border-color: transparent;
-                    background: rgba(0,0,0,.06);
+                    background: #f5f8f9;
                 }
                 a.category-list-link{
                     color: gray;
@@ -163,14 +163,14 @@ a{
             }
         }
         /*post list common*/
-        a{
-            display: block;
-            color: #666;
-            &:hover{
-                color: #666;
-                text-decoration: none;
-            }
-        }
+        // a{
+        //     display: block;
+        //     color: #666;
+        //     &:hover{
+        //         color: #38b7ea;
+        //         text-decoration: none;
+        //     }
+        // }
         img{
             border-radius: 4px;
             vertical-align: top;
@@ -194,18 +194,33 @@ a{
                 }
             }
         }
+        blockquote p{
+            padding: 15px 0;
+            line-height: 1.7;
+            word-break: break-all;
+            text-indent: 2em;
+            a{
+                color: #38b7ea;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
         .post_item_footer{
             display: flex;
             justify-content: space-between;
             font-size: 14px;
             color: gray;
-            .right_tags{
-                span{
-                    padding: 0 15px;
-                    border-radius: 10px;
-                    background-color: rgba(0,0,0,0.06);
+            .showall{
+                padding: 6px 15px;
+                @include button(15px, #f5f8f9, gray);
+                &:hover{
+                    background-color: #38b7ea;
+                    text-decoration: none;
+                    color: #fff;
                 }
             }
+
         }
         
         /*.column_list*/
@@ -221,6 +236,13 @@ a{
                 .post_item_title{
                     display: inherit;
                     line-height: 1.5;
+                    a{
+                        color: #666;
+                        &:hover{
+                            color: #38b7ea;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
@@ -253,7 +275,8 @@ footer {
     padding: 20px 0;
     border-top: 1px solid #eceff2;
     color: #565a5f;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.6;
     text-align: center;
 }
 

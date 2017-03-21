@@ -1,31 +1,31 @@
 <article class="post_item post_item_column">
     <div class="post_item_info">
         <% if(post.link){ %>
-            <a href="<%- url_for(post.link) %>" target="_blank">
-                <span class="post_item_title"><%= post.title %></span>
+            <div class="post_item_title">
+                <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>    
+            </div>
+            <%- partial("post/gallery") %>
+            <% if(index && post.excerpt) { %>
+                <div class="post_item_summary"><%- post.excerpt %></div>
+            <% } else { %>
+                <%- post.content %>
+            <% } %>
+        <% } else if(post.title) { %>
+            <% if (index) { %>
+                <div class="post_item_title">
+                    <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>    
+                </div>
                 <%- partial("post/gallery") %>
-                <% if(index && post.excerpt) { %>
-                    <span class="post_item_summary"><%- post.excerpt %></span>
+                <% if(post.excerpt) { %>
+                    <div class="post_item_summary"><%- post.excerpt %></div>
                 <% } else { %>
                     <%- post.content %>
                 <% } %>
-            </a>
-        <% } else if(post.title) { %>
-            <% if (index) { %>
-                <a href="<%- url_for(post.path) %>">
-                    <span class="post_item_title"><%= post.title %></span>
-                    <%- partial("post/gallery") %>
-                    <% if(post.excerpt) { %>
-                        <span class="post_item_summary"><%- post.excerpt %></span>
-                    <% } else { %>
-                        <%- post.content %>
-                    <% } %>
-                </a>
             <% } else { %>
-                <span class="post_item_title"><%= post.title %></span>
+                <div class="post_item_title"><%= post.title %></div>
                 <%- partial("post/gallery") %>
                 <% if(post.excerpt) { %>
-                    <span class="post_item_summary"><%- post.excerpt %></span>
+                    <div class="post_item_summary"><%- post.excerpt %></div>
                 <% } else { %>
                     <%- post.content %>
                 <% } %>
@@ -33,11 +33,10 @@
         <% } %>
     </div>
     <div class="post_item_footer">
-        <span class="left_date">2017-03-08</span>
-        <span class="right_tags">
-            <span>javascript</span>
-            <span>vue</span>
+        <span class="left_date">
+            <span>2017-04-08</span>
         </span>
+        <a href="" class="showall">查看全文</a>
     </div>
 </article>
 <% if (!index) { %>
