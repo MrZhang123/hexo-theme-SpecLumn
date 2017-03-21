@@ -32,12 +32,12 @@
             <% } %>
         <% } %>
     </div>
-    <div class="post_item_footer">
-        <span class="left_date">
-            <span>2017-04-08</span>
-        </span>
-        <a href="" class="showall">查看全文</a>
-    </div>
+    <% if(page.layout != 'page' ) { %>
+        <div class="post_item_footer">
+            <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+            <a href="<%- url_for(post.path) %>" class="showall">查看全文</a>
+        </div>
+    <% } %>
 </article>
 <% if (!index) { %>
     <%- partial('comment/index') %>

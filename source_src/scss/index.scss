@@ -114,10 +114,10 @@ a{
             li{
                 display: inline-block;
                 margin: 8px;
-                @include wh(auto,30px);
-                line-height: 30px;
+                @include wh(auto,20px);
+                line-height: 20px;
                 font-size: 14px;
-                padding: 0 15px;
+                padding: 0 10px;
                 border-radius: 15px;
                 box-sizing: border-box;
                 border: 1px solid rgba(0,0,0,.1);
