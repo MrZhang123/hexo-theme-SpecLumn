@@ -1,29 +1,4 @@
-@import './function.scss';
-@import './reset.scss';
-
-@font-face {
-  font-family: 'iconfont';  /* project id 244073 */
-  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot');
-  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.svg#iconfont') format('svg');
-}
-.icon_font{
-    font-family: 'iconfont';
-    color: #999;
-}
-img{
-    display: block;
-    width: 100%;
-}
-a{
-    color: #3e7ac2;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-    }
-}
+@import './common';
 
 //top-navbar
 .navbar{
@@ -72,6 +47,29 @@ a{
     margin: 47px auto 0;
     padding: 0;
     width: 660px;
+    /*common*/
+    img{
+        border-radius: 4px;
+        vertical-align: top;
+        object-fit: cover;
+    }
+    blockquote p{
+        line-height: 1.7;
+        word-break: break-all;
+        a{
+            color: #38b7ea;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .article-date{
+        time{
+            line-height: 26px;
+            color: #999;
+        }
+    }
+    /*page index*/
     .column_about{
         display: flex;
         flex-direction: column;
@@ -140,6 +138,26 @@ a{
         }
     }
     .article_list{
+        /*common*/
+        .post_item_title{
+            line-height: 1.5;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .post_item_summary{
+            padding-top: 20px;
+            padding-bottom: 15px;
+            line-height: 1.7;
+            word-break: break-all;
+            .post_list_item_readall{
+                padding-left: 4px;
+                color: #b3b3b3;
+                .icon_font{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
         /*article line*/
         .block_title{
             position: relative;
@@ -162,59 +180,12 @@ a{
                 background-color:#f0f0f0;
             }
         }
-        /*post list common*/
-        // a{
-        //     display: block;
-        //     color: #666;
-        //     &:hover{
-        //         color: #38b7ea;
-        //         text-decoration: none;
-        //     }
-        // }
-        img{
-            border-radius: 4px;
-            vertical-align: top;
-            object-fit: cover;
-        }
-        .post_item_title{
-            line-height: 1.5;
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .post_item_summary{
-            padding-top: 20px;
-            padding-bottom: 15px;
-            line-height: 1.7;
-            word-break: break-all;
-            .post_list_item_readall{
-                padding-left: 4px;
-                color: #b3b3b3;
-                .icon_font{
-                    display: inline-block;
-                    vertical-align: middle;
-                }
-            }
-        }
-        blockquote p{
-            line-height: 1.7;
-            word-break: break-all;
-            a{
-                color: #38b7ea;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
         .post_item_footer{
             display: flex;
             justify-content: space-between;
             font-size: 14px;
             color: #999;
-            .article-date{
-                time{
-                    line-height: 26px;
-                }
-            }
+            
             .showall{
                 padding: 6px 15px;
                 @include button(15px, #f5f8f9, #999);
@@ -226,7 +197,6 @@ a{
             }
 
         }
-        
         /*.column_list*/
         .post_item_column{
             margin-bottom: 58px;
@@ -239,7 +209,6 @@ a{
             .post_item_info{
                 .post_item_title{
                     display: inherit;
-                    line-height: 1.5;
                     a{
                         color: #666;
                         &:hover{
@@ -297,6 +266,21 @@ a{
             font-weight: bold;
         }
     }
+    /*page article*/
+    .post_item_article{
+        line-height: 1.7;
+        @include titlefont;
+        @include articleP;
+        .post_item_title{
+            font-size: 32px;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+        .article-date{
+            margin-top: 22px;
+        }
+    }
+
 }
 footer {
     padding: 20px 0;

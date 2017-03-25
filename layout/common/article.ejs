@@ -32,10 +32,13 @@
                     </div>
                 <% } %>
             <% } else { %>
-                <div class="post_item_title"><%= post.title %></div>
-                <%- partial("post/gallery") %>
-                <%- post.content %>
-                <%- partial('comment/index') %>
+                <div class="post_item_article">
+                    <div class="post_item_title"><%= post.title %></div>
+                    <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+                    <%- partial("post/gallery") %>
+                    <%- post.content %>
+                    <%- partial('comment/index') %>
+                </div>
             <% } %>
         <% } %>
     </div>
