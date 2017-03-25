@@ -100,7 +100,7 @@ a{
                 padding: 0 16px;
                 font-size: 14px;
                 line-height: 34px;
-                @include button(4px, #f5f8f9, gray);
+                @include button(4px, #f5f8f9, #999);
                 &:hover{
                     background-color: #38b7ea;
                     text-decoration: none;
@@ -121,14 +121,14 @@ a{
                 border-radius: 15px;
                 box-sizing: border-box;
                 border: 1px solid rgba(0,0,0,.1);
-                color: gray;
+                color: #999;
                 cursor:pointer;
                 &:hover{
                     border-color: transparent;
                     background: #f5f8f9;
                 }
                 a.category-list-link{
-                    color: gray;
+                    color: #999;
                     &:hover{
                         text-decoration: none;
                     }
@@ -182,7 +182,8 @@ a{
             font-weight: 700;
         }
         .post_item_summary{
-            padding: 15px 0;
+            padding-top: 20px;
+            padding-bottom: 15px;
             line-height: 1.7;
             word-break: break-all;
             .post_list_item_readall{
@@ -195,7 +196,6 @@ a{
             }
         }
         blockquote p{
-            padding: 15px 0;
             line-height: 1.7;
             word-break: break-all;
             a{
@@ -209,10 +209,15 @@ a{
             display: flex;
             justify-content: space-between;
             font-size: 14px;
-            color: gray;
+            color: #999;
+            .article-date{
+                time{
+                    line-height: 26px;
+                }
+            }
             .showall{
                 padding: 6px 15px;
-                @include button(15px, #f5f8f9, gray);
+                @include button(15px, #f5f8f9, #999);
                 &:hover{
                     background-color: #38b7ea;
                     text-decoration: none;
@@ -269,6 +274,29 @@ a{
             }
         }
     }
+    .pagination{
+        margin: 58px 0;
+        text-align: center;
+        font-size: 14px;
+        a , span {
+            height: 32px;
+            padding: 0 10px;
+            line-height: 32px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 2px;
+            color: #999;
+        }
+        a:hover{
+            color: #fff;
+            background: #38b7ea;
+            text-decoration: none;
+        }
+        .current{
+            color: #565a5f;
+            font-weight: bold;
+        }
+    }
 }
 footer {
     padding: 20px 0;
@@ -295,7 +323,7 @@ footer {
         .post_tag{
             margin-top: 22px;
             // .archive-article-date{
-            //     color: gray;
+            //     color: #999;
             //     font-size: 
             // }
         }

@@ -17,6 +17,9 @@
         <% }) %>
     </div>
     <div class="pagination">
-        <%- paginator({ total: Math.ceil(site.posts.length / config.per_page)}) %>
+        <%- paginator({
+            prev_text: '&laquo; 上一页',
+            next_text: '下一页 &raquo;'
+        }) %>
     </div>
 </div>
