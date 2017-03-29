@@ -63,6 +63,9 @@
             }
         }
     }
+    article{
+        margin-bottom: 58px;
+    }
     .article-date{
         time{
             line-height: 26px;
@@ -199,7 +202,6 @@
         }
         /*.column_list*/
         .post_item_column{
-            margin-bottom: 58px;
             .post_item_pic{
                 padding-bottom: 15px;
                 img{

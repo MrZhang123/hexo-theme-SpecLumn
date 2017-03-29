@@ -1,3 +1,4 @@
+<div class="main_content main_article">
 <article class="post_item post_item_column">
     <div class="post_item_info">
         <% if(post.link){ %>
@@ -37,9 +38,17 @@
                     <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
                     <%- partial("post/gallery") %>
                     <%- post.content %>
-                    <%- partial('comment/index') %>
                 </div>
             <% } %>
+        <% } else { %>
+            <div class="post_item_article">
+                <%- post.content %>
+            </div>    
         <% } %>
     </div>
 </article>
+<% if (!index) { %>
+        <%- partial('comment/index') %>
+    <% } %>
+</div>
+
