@@ -1,5 +1,12 @@
-<header class="navbar">
-    <div class="navbar_logo">
-        <a href="/" class="navbar_logo_icon">Z</a>
+<header class="fixed-header">
+    <div class="navbar">
+        <div class="navbar_logo vertical-center">
+            <a href="/" class="navbar_logo_icon">Z</a>
+        </div>
+        <nav class="about vertical-center">
+            <% for (var i in theme.menu) { %>
+                <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            <% } %>
+        </nav>
     </div>
 </header>

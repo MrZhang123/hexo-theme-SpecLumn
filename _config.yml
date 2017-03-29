@@ -1,10 +1,10 @@
 # Menus
 menu:
-  Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+  #Home: .
+  #Archives: archives
+  #Categories: categories
+  #Tags: tags
+  ME: about
 
 # Customize
 customize:
