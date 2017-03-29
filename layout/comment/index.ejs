@@ -1,15 +1,9 @@
 <% if (post.comments) { %>
     <section id="comments">
-    <% if (theme.comment.disqus) { %>
-        <%- partial('comment/disqus') %>
+    <% if (theme.comment.livere) { %>
+        <%- partial('comment/livere') %>
     <% } else if (theme.comment.duoshuo) { %>
-        <%- partial('comment/duoshuo') %>
-    <% } else if (theme.comment.youyan) { %>
-        <%- partial('comment/youyan') %>
-    <% } else if (theme.comment.facebook) { %>
-      <%- partial('comment/facebook') %>
-    <% } else if (theme.comment.isso) { %>
-        <%- partial('comment/isso') %>
+        <%- partial('comment/duoshuo') %>        
     <% } %>
     </section>
 <% } %>

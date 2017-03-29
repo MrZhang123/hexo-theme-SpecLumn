@@ -1,0 +1,5 @@
+<% if (theme.comment.livere) { %>
+    <%- partial('comment/livere', { script: true }) %>
+<% } else if (theme.comment.duoshuo) { %>
+    <%- partial('comment/duoshuo', { script: true }) %>
+<% } %>
