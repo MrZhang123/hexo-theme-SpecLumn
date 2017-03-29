@@ -1,5 +1,6 @@
 @import './function.scss';
 @import './reset.scss';
+@import './monokai-sublime';
 
 @font-face {
   font-family: 'iconfont';  /* project id 244073 */
@@ -8,6 +9,9 @@
   url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.woff') format('woff'),
   url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.svg#iconfont') format('svg');
+}
+body{
+    color: #666;
 }
 .icon_font{
     font-family: 'iconfont';
@@ -52,10 +56,33 @@ a{
     }
     
 }
+code {
+  margin: 0 2px;
+  color: #e96900;
+  padding: 3px 5px;
+  font-size: 0.8em;
+  border-radius: 2px;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  background-color: #f8f8f8;
+}
 @mixin articleP{
     p{
         margin: 20px 0;
         word-break: break-all;
         text-align: justify;
     }
+}
+.highlight {
+  margin: 0px;
+  display: block;
+  overflow-x: auto;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  line-height: 22px;
+  .gutter pre{
+    color: #666;
+    text-align: right;
+    padding-right: 20px;
+  }
 }

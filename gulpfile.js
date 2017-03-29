@@ -24,7 +24,7 @@ gulp.task('bs',()=>{
         browser:'google chrome canary'
     });
     gulp.watch('source_src/scss/*.scss',['sass'])
-    gulp.watch('*.html').on('change',reload);
+    // gulp.watch('*.html').on('change',reload);
 });
 
 /*gulp-sass*/
