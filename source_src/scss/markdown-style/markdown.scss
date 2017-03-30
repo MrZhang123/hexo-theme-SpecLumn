@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 h2 {
     font-size: 1.5em;
@@ -14,7 +14,7 @@ h5 {
     font-size: 1em;
 }
 h6 {
-    font-size: 1em;
+    font-size: 0.8em;
     color: #999;
 }
 h1,h2,h3,h4,h5,h6{
@@ -26,6 +26,7 @@ p{
     margin: 20px 0;
     word-break: break-all;
     text-align: justify;
+    line-height: 1.6em;
 }
 ol{
     li{
@@ -43,7 +44,7 @@ blockquote{
     margin: 20px 0;
     p{
         margin: 0;
-        line-height: 1.7;
+        line-height: 1.6em;
         word-break: break-all;
         a{
             color: #38b7ea;
