@@ -28,10 +28,11 @@ customize:
         github: http://github.com/ppoffice/hexo-theme-icarus
         segmentfault: https://segmentfault.com/u/fengsdesinian
         weibo: http://weibo.com/2891858001/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1
-        #知乎： ／
+        #zhihu： /
         #stackoverflow: /
         #twitter: /
         #facebook: /
+        #google: /
         #rss: /
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
