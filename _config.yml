@@ -27,8 +27,9 @@ customize:
     social_links:
         github: http://github.com/ppoffice/hexo-theme-icarus
         segmentfault: https://segmentfault.com/u/fengsdesinian
-        #stackoverflow: /
         weibo: http://weibo.com/2891858001/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1
+        #知乎： ／
+        #stackoverflow: /
         #twitter: /
         #facebook: /
         #rss: /

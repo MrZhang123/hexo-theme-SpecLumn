@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 244073 */
-  src: url('//at.alicdn.com/t/font_w12utug9nn9rizfr.eot');
-  src: url('//at.alicdn.com/t/font_w12utug9nn9rizfr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_w12utug9nn9rizfr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_w12utug9nn9rizfr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_w12utug9nn9rizfr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_0fefvg7128b2zkt9.eot');
+  src: url('//at.alicdn.com/t/font_0fefvg7128b2zkt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_0fefvg7128b2zkt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_0fefvg7128b2zkt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_0fefvg7128b2zkt9.svg#iconfont') format('svg');
 }
 
 .fa{
@@ -33,5 +33,8 @@
     }
     &.fa-twitter:before{
         content: '\e634';
+    }
+    &.fa-zhihu:before{
+        content: '\e6d1';
     }
 }
