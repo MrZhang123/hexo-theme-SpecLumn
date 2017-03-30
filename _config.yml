@@ -26,8 +26,11 @@ customize:
     favicon: # path to favicon
     social_links:
         github: http://github.com/ppoffice/hexo-theme-icarus
-        twitter: /
-        facebook: /
+        segmentfault: https://segmentfault.com/u/fengsdesinian
+        #stackoverflow: /
+        weibo: http://weibo.com/2891858001/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1
+        #twitter: /
+        #facebook: /
         #rss: /
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 

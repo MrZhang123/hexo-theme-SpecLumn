@@ -1,15 +1,9 @@
-@import './function.scss';
-@import './reset.scss';
+@import './function';
+@import './reset';
+@import './iconfont';
 @import './code-style/monokai-sublime';
 
-@font-face {
-  font-family: 'iconfont';  /* project id 244073 */
-  src: url('//at.alicdn.com/t/font_tops5ztsa46lxr.eot');
-  src: url('//at.alicdn.com/t/font_tops5ztsa46lxr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_tops5ztsa46lxr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_tops5ztsa46lxr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_tops5ztsa46lxr.svg#iconfont') format('svg');
-}
+
 html{
     height: 100%;
 }
@@ -20,31 +14,6 @@ body{
     color: #666;
     .content{
         flex: 1; 
-    }
-}
-.fa{
-    font-family: 'iconfont';
-    color: #999;
-    &:hover{
-        color: #666;
-    }
-    &.fa-google:before{
-        content: '\e758';
-    }
-    &.fa-facebook:before{
-        content: '\e613';
-    }
-    &.fa-stackoverflow:before{
-        content: '\e77f';
-    }
-    &.fa-github:before{
-        content:'\e69f';
-    }
-    &.fa-weibo:before{
-        content:'\e64f';
-    }
-    &.fa-twitter:before{
-        content: '\e634';
     }
 }
 img{
