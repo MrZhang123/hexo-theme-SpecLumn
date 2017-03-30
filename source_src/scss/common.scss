@@ -1,14 +1,14 @@
 @import './function.scss';
 @import './reset.scss';
-@import './monokai-sublime';
+@import './code-style/monokai-sublime';
 
 @font-face {
   font-family: 'iconfont';  /* project id 244073 */
-  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot');
-  src: url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_iwpmm3684keuq5mi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_tops5ztsa46lxr.eot');
+  src: url('//at.alicdn.com/t/font_tops5ztsa46lxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_tops5ztsa46lxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_tops5ztsa46lxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_tops5ztsa46lxr.svg#iconfont') format('svg');
 }
 html{
     height: 100%;
@@ -22,9 +22,30 @@ body{
         flex: 1; 
     }
 }
-.icon_font{
+.fa{
     font-family: 'iconfont';
     color: #999;
+    &:hover{
+        color: #666;
+    }
+    &.fa-google:before{
+        content: '\e758';
+    }
+    &.fa-facebook:before{
+        content: '\e613';
+    }
+    &.fa-stackoverflow:before{
+        content: '\e77f';
+    }
+    &.fa-github:before{
+        content:'\e69f';
+    }
+    &.fa-weibo:before{
+        content:'\e64f';
+    }
+    &.fa-twitter:before{
+        content: '\e634';
+    }
 }
 img{
     display: block;
@@ -38,54 +59,12 @@ a{
     }
 }
 /*main article title*/
-@mixin titlefont {
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1.3em;
-    }
-    h4 {
-        font-size: 1.2em;
-    }
-    h5 {
-        font-size: 1em;
-    }
-    h6 {
-        font-size: 1em;
-        color: #999;
-    }
-    h1,h2,h3,h4,h5,h6{
-        line-height: 1.3em;
-        margin: 1.3em 0;
-        font-weight: bold;
-    }
-    
-}
-code {
-  margin: 0 2px;
-  color: #e96900;
-  padding: 3px 5px;
-  font-size: 0.8em;
-  border-radius: 2px;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  background-color: #f8f8f8;
-}
-@mixin articleP{
-    p{
-        margin: 20px 0;
-        word-break: break-all;
-        text-align: justify;
-    }
-}
 .highlight {
   margin: 0px;
   display: block;
   overflow-x: auto;
   padding: 15px 20px;
+  margin: 1.6em 0;
   font-size: 14px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   line-height: 22px;

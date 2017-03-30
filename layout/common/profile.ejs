@@ -1,0 +1,24 @@
+
+<%
+var customize = theme.customize;
+var profile = customize.profile;
+var social_links = customize.social_links;
+%>
+<div class="column_about">
+    <img src="<%= url_for(profile.avatar) %>" alt="head">
+    <h1 class="column_about_name"><%= profile.author %></h1>
+    <p class="column_about_intro"><%= profile.author_title %></p>
+    <div class="column_about_actions">
+        <a class="button column_follow_button" target="_blank" href="<%= profile.follow %>">关注我</a>
+    </div>
+    <% if(social_links) { %>
+    <ul class="column_social_links">
+        <% for(var i in social_links) { %>
+        <li><a href="<%- url_for(social_links[i])%>" target="_blank" title="<%= i %>"><i class="fa fa-<%= i %>"></i></a></li>
+        <% } %>
+    </ul>
+    <% } %>
+    <div class="column_topic_list">
+        <%- list_categories() %>
+    </div>
+</div>

@@ -1,16 +1,5 @@
-<% var profile = theme.customize.profile %>
 <div class="main_content">
-    <div class="column_about">
-        <img src="<%= url_for(profile.avatar) %>" alt="head">
-        <h1 class="column_about_name"><%= profile.author %></h1>
-        <p class="column_about_intro"><%= profile.author_title %></p>
-        <div class="column_about_actions">
-            <a class="button column_follow_button" target="_blank" href="<%= profile.follow %>">关注我</a>
-        </div>
-        <div class="column_topic_list">
-            <%- list_categories() %>
-        </div>
-    </div>
+    <%- partial('common/profile') %>
     <div class="article_list">
         <% page.posts.each(function(post) { %>
             <%- partial('common/article', {index: true, post: post}) %>

@@ -10,7 +10,6 @@
     background-color: rgba(255,255,255,.6);
 }
 .navbar{
-    
     display: flex;
     justify-content: space-between; 
     .vertical-center{
@@ -73,16 +72,6 @@
         vertical-align: top;
         object-fit: cover;
     }
-    blockquote p{
-        line-height: 1.7;
-        word-break: break-all;
-        a{
-            color: #38b7ea;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
     article{
         margin-bottom: 58px;
     }
@@ -113,8 +102,7 @@
             margin-bottom: 12px;
         }
         .column_about_actions{
-            margin-top: 14px;
-            margin-bottom: 20px;
+            margin: 14px 0;
             .column_follow_button{
                 width: 90px;
                 box-sizing: border-box;
@@ -126,6 +114,22 @@
                     background-color: #38b7ea;
                     text-decoration: none;
                     color: #fff;
+                }
+            }
+        }
+        .column_social_links{
+            width: 120px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+                .fa{
+                    font-size: 20px;
                 }
             }
         }
@@ -291,8 +295,6 @@
     /*page article*/
     .post_item_article{
         line-height: 1.7;
-        @include titlefont;
-        @include articleP;
         .post_item_title{
             font-size: 32px;
             line-height: 1.3;
@@ -320,26 +322,6 @@ footer {
     line-height: 1.6;
     text-align: center;
 }
-
-/*--------------------文章部分--------------------*/
-
-.article{
-    .post_header{
-        margin-top: 22px;
-        .post_title_img{
-            margin-bottom: 22px;
-        }
-        .post_title{
-            font-size: 32px;
-            line-height: 1.3;
-            font-weight: 700;
-        }
-        .post_tag{
-            margin-top: 22px;
-            // .archive-article-date{
-            //     color: #999;
-            //     font-size: 
-            // }
-        }
-    }
+article{
+    @import './markdown-style/markdown';
 }

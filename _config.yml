@@ -28,8 +28,7 @@ customize:
         github: http://github.com/ppoffice/hexo-theme-icarus
         twitter: /
         facebook: /
-        dribbble: /
-        rss: /
+        #rss: /
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
