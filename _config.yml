@@ -56,7 +56,7 @@ share: default # options: jiathis, bdshare, addtoany, default
 # Plugins
 plugins:
     google_analytics: # enter the tracking ID for your Google Analytics
-    baidu_analytics: # enter Baidu Analytics hash key
+    baidu_analytics: 5efd05054ba8c5d775364cdee324e35f 
 
 # Miscellaneous
 miscellaneous:
