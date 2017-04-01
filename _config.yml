@@ -10,8 +10,8 @@ menu:
 customize:
     logo:
         enabled: true
-        width: 40
-        height: 40
+        # width: 40
+        # height: 40
         url: css/images/logo.png
     profile:
         enabled: true # Whether to show profile bar
@@ -25,7 +25,7 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: css/images/favicon.ico
     social_links:
-        github: http://github.com/ppoffice/hexo-theme-icarus
+        github: https://github.com/MrZhang123/
         segmentfault: https://segmentfault.com/u/fengsdesinian
         weibo: http://weibo.com/2891858001/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1
         #zhihu： /
