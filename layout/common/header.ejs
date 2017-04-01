@@ -1,7 +1,11 @@
 <header class="fixed-header">
     <div class="navbar">
         <div class="navbar_logo vertical-center">
-            <a href="/" class="navbar_logo_icon">Z</a>
+            <a href="/" class="navbar_logo_icon">
+                <% if(theme.customize.logo && theme.customize.logo.enabled) { %>
+                     <i class="logo"></i>
+                <% } %>
+            </a>
         </div>
         <nav class="about vertical-center">
             <% for (var i in theme.menu) { %>

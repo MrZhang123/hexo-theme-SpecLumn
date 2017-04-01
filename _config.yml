@@ -12,7 +12,7 @@ customize:
         enabled: true
         width: 40
         height: 40
-        url: images/logo.png
+        url: css/images/logo.png
     profile:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.jpg
@@ -23,7 +23,7 @@ customize:
     highlight: monokai
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: css/images/favicon.ico
     social_links:
         github: http://github.com/ppoffice/hexo-theme-icarus
         segmentfault: https://segmentfault.com/u/fengsdesinian
