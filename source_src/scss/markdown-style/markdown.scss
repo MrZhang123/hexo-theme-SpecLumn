@@ -63,3 +63,26 @@ code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   background-color: #f8f8f8;
 }
+.post_item_article>table{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-left: none;
+    word-break: normal;
+    thead th {
+        vertical-align: middle;
+        text-align: inherit;
+    }
+    th, td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        line-height: 20px;;
+        vertical-align: middle;
+    }
+    th { font-weight: bold }
+    .image-package {
+        width: auto;
+        margin-left: 0;
+    }
+}
