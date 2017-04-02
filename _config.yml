@@ -10,8 +10,8 @@ menu:
 customize:
     logo:
         enabled: true
-        # width: 40
-        # height: 40
+        width: 150
+        height: 35
         url: css/images/logo.png
     profile:
         enabled: true # Whether to show profile bar
@@ -21,6 +21,7 @@ customize:
         author_title: Web Developer & Designer
         follow: https://github.com/MrZhang123/
     highlight: monokai
+    markdown_style: markdown        
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: css/images/favicon.ico
