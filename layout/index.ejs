@@ -1,14 +1,12 @@
-<div class="main_content">
-    <%- partial('common/profile') %>
-    <div class="article_list">
-        <% page.posts.each(function(post) { %>
-            <%- partial('common/article', {index: true, post: post}) %>
-        <% }) %>
-    </div>
-    <div class="pagination">
-        <%- paginator({
-            prev_text: '&laquo; 上一页',
-            next_text: '下一页 &raquo;'
-        }) %>
-    </div>
+<%- partial('common/profile') %>
+<div class="article_list">
+    <% page.posts.each(function(post) { %>
+        <%- partial('common/article', {index: true, post: post}) %>
+    <% }) %>
+</div>
+<div class="pagination">
+    <%- paginator({
+        prev_text: '&laquo; 上一页',
+        next_text: '下一页 &raquo;'
+    }) %>
 </div>
