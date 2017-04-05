@@ -51,9 +51,6 @@ comment:
     facebook: # enter true to enable
     livere: hexo-theme-SpecLumn # enter the domain name of your own comment isso server eg. comments.example.com
 
-# Share
-share: default # options: jiathis, bdshare, addtoany, default
-
 # Plugins
 plugins:
     google_analytics: # enter the tracking ID for your Google Analytics
