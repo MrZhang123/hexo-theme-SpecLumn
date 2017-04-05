@@ -12,7 +12,7 @@ customize:
         enabled: true
         width: 150
         height: 35
-        url: css/images/logo.png
+        url: images/logo.png
     profile:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.jpg
