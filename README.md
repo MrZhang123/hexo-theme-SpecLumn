@@ -4,14 +4,17 @@
 
 ## 特性Features
 
-#### 响应设备
+* 响应式设计
+* 支持主流的评论系统，例如：disqus，多说，有言等
+* 内置 monokai 和 tomorrow 两款高亮主题
 
-SpecLumn 使用 Flexbox 可以根据不同的设备尺寸进行相应的改变
+## 使用
 
-#### 评论系统
+修改blog配置文件中的`theme`关键字
 
-SpecLumn 支持主流的评论系统，例如：disqus，多说，有言等
-
-#### 代码高亮
-
-SpecLumn 内置 monokai 和 tomorrow 两款高亮主题
+```sh
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: SpecLumn
+```
