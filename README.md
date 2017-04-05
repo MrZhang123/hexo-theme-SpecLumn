@@ -2,16 +2,16 @@
 
 ####  The theme like zhihu column , super simple for Hexo, [Preview](https://mrzhang123.github.io/)
 
-# Features
+# 特性Features
 
-### Responsive Layout
+### 响应设备
 
-SpecLumn use Flexbox , it can know what screen size you are browsering the website, and reorganize the layout to fit your device.
+SpecLumn 使用 Flexbox 可以根据不同的设备尺寸进行相应的改变
 
-### Custom Comment Services
+### 评论系统
 
-SpecLumn supports main current comment services,like disqus youyan etc.
+SpecLumn 支持主流的评论系统，例如：disqus，多说，有言等
 
-### Code Highlight
+### 代码高亮
 
-SpecLumn support monokai and tomorrow theme , the highlight theme will in the future.
+SpecLumn 内置 monokai 和 tomorrow 两款高亮主题
