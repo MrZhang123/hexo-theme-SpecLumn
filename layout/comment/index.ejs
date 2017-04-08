@@ -1,9 +1,5 @@
 <% if (post.comments) { %>
     <section id="comments">
-    <% if (theme.comment.livere) { %>
-        <%- partial('comment/livere') %>
-    <% } else if (theme.comment.duoshuo) { %>
-        <%- partial('comment/duoshuo') %>        
-    <% } %>
+    <%- partial('comment/script') %>
     </section>
 <% } %>
