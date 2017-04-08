@@ -49,7 +49,7 @@ comment:
     #duoshuo:  # enter duoshuo shortname here
     #youyan:  # enter youyan uid here
     #facebook: # enter true to enable
-    livere:
+    livere: # enter livere uid here
 
 # Plugins
 plugins:
