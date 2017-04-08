@@ -47,9 +47,9 @@ search:
 comment:
     disqus:  # enter disqus shortname here
     duoshuo:  # enter duoshuo shortname here
-    youyan: # enter youyan uid here
+    youyan: 2127972 # enter youyan uid here
     facebook: # enter true to enable
-    livere: hexo-theme-SpecLumn # enter the domain name of your own comment isso server eg. comments.example.com
+    livere:  # enter the domain name of your own comment isso server eg. comments.example.com
 
 # Plugins
 plugins:
