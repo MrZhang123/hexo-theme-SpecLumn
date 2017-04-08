@@ -47,9 +47,9 @@ search:
 comment:
     #disqus:  # enter disqus shortname here
     #duoshuo:  # enter duoshuo shortname here
-    youyan: 2127972 # enter youyan uid here
+    #youyan:  # enter youyan uid here
     #facebook: # enter true to enable
-    #livere
+    livere:
 
 # Plugins
 plugins:
